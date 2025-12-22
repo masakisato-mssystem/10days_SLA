@@ -87,24 +87,38 @@
             <!-- コンテンツ本体 (スクロール領域) -->
             <div id="modalScrollableContent" class="flex-1 overflow-y-auto">
                 
-                <!-- 1. メインビジュアル（写真＋タイトル分離型） -->
-                <div>
-                    <!-- 画像エリア（文字を重ねず写真の美しさを強調） -->
-                    <div class="w-full h-64 md:h-80 bg-gray-200 overflow-hidden">
-                        <!-- 画像: main.jpg に変更 -->
-                        <img src="main.jpg" alt="寝室でくつろぐSLAショコラ" class="w-full h-full object-cover">
-                    </div>
+                <!-- 1. メインビジュアル（画像加工＋テキスト配置） -->
+                <div class="relative w-full h-72 md:h-96 bg-gray-900 overflow-hidden">
+                    <!-- 
+                        画像: SLA_main.jpg (元のきれいな写真を使用してください)
+                        object-cover で枠いっぱいに表示
+                    -->
+                    <img src="SLA_main.jpg" alt="寝室でくつろぐSLAショコラ" class="w-full h-full object-cover">
                     
-                    <!-- タイトルエリア（白背景で上品に） -->
-                    <div class="bg-white px-6 py-8 text-center border-b border-gray-100">
-                        <p class="text-sm font-bold text-brand-gold tracking-widest mb-3">MS SYSTEM / SLA CHOCOLAT</p>
-                        <h2 class="text-2xl md:text-3xl font-serif-jp font-bold text-brand-brown leading-tight mb-4">
-                            いつものスマホが、<br>
-                            極上の癒やし空間に。
-                        </h2>
-                        <p class="text-gray-600 text-sm md:text-base leading-relaxed">
-                            置くだけで、寝室がホテルスイートへ。<br class="md:hidden">面倒な配線は一切ありません。
-                        </p>
+                    <!-- 
+                        【重要】CSSグラデーション（画像の加工部分）
+                        bg-gradient-to-r: 左から右へのグラデーション
+                        from-black/90: 左端は濃い黒（不透明度90%）
+                        via-black/40: 中間は薄い黒（不透明度40%）
+                        to-transparent: 右端は透明（元の写真の明るさを活かす）
+                    -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent"></div>
+
+                    <!-- テキスト配置エリア（左側に配置） -->
+                    <div class="absolute inset-0 flex flex-col justify-center px-8 md:px-12 text-white">
+                        <div class="max-w-lg">
+                            <p class="text-xs md:text-sm font-bold tracking-widest mb-4 text-brand-gold opacity-90">MS SYSTEM / SLA CHOCOLAT</p>
+                            
+                            <h2 class="text-2xl md:text-4xl font-serif-jp font-bold leading-tight mb-4 drop-shadow-md">
+                                寝室を、<br>ホテルスイートへ。
+                            </h2>
+                            
+                            <p class="text-sm md:text-base leading-relaxed opacity-90 font-medium drop-shadow-sm">
+                                ベッドがもたらす「身体の休息」を、<br class="hidden md:block">
+                                「聴覚的な安らぎ」で補完する、<br class="md:hidden">
+                                プロが選んだ音響インフラ。
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -158,7 +172,7 @@
                                         <i class="fa-solid fa-couch text-brand-gold mr-2"></i>リビングで
                                     </h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
-                                        タブレットの動画が、まるで映画館のような臨場感に。会話の邪魔をしない自然な響きです。
+                                        スマホやPCの動画が、まるで「目の前で演奏している」かのような臨場感に。 音が空間に溶け込むから、大切な家族との会話も自然と弾みます。
                                     </p>
                                 </div>
                             </div>
