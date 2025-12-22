@@ -125,27 +125,33 @@
                 </div>
 
                 <!-- 2. オファーの提示（アンカープライス） -->
+                <!-- 修正: 「本体0円」の誤解を防ぎ、「無料体験」を強調するデザインに変更 -->
                 <div class="bg-amber-50/50 p-6 md:p-8 text-center border-b border-dashed border-brand-gold/30">
-                    <div class="inline-block bg-white border-2 border-brand-gold rounded-xl shadow-sm px-6 py-4 max-w-lg w-full">
-                        <!-- 価格 -->
-                        <div class="mb-3">
-                            <p class="text-xs md:text-sm font-bold text-gray-400 line-through decoration-gray-400">通常価格 〇〇円(税込)</p>
-                            <div class="flex items-end justify-center gap-2 leading-none mt-1">
-                                <span class="text-sm text-brand-brown font-bold pb-1">→</span>
-                                <span class="text-red-600 font-bold text-lg">今回限り</span>
-                                <span class="text-red-600 font-black text-4xl md:text-5xl">0<span class="text-xl md:text-2xl">円</span></span>
-                            </div>
-                        </div>
+                    <div class="inline-block bg-white border-2 border-brand-gold rounded-xl shadow-sm px-4 py-6 md:px-8 md:py-8 max-w-lg w-full">
                         
-                        <!-- 期間と特典 -->
-                        <div class="space-y-2">
-                            <div class="bg-brand-brown text-white text-sm font-bold py-1 px-3 rounded-full inline-block">
-                                たっぷり10日間 無料体験
-                            </div>
-                            <p class="text-sm text-brand-brown font-bold leading-relaxed pt-2">
+                        <!-- 通常価格の提示（控えめに） -->
+                        <p class="text-sm font-bold text-gray-500 mb-3">
+                            通常価格 107,800円(税込)のSLAショコラが
+                        </p>
+                        
+                        <!-- 大きなボタン風エリア（体験の強調） -->
+                        <div class="bg-gradient-to-b from-red-500 to-red-600 text-white rounded-full py-3 px-4 md:px-8 shadow-md mb-3 transform transition hover:scale-105 duration-300 inline-block w-full max-w-sm mx-auto">
+                            <p class="text-lg md:text-xl font-bold leading-none">
+                                たっぷり10日間 <span class="text-2xl md:text-3xl text-yellow-200 drop-shadow-sm mx-1">無料</span>でお試し
+                            </p>
+                        </div>
+
+                        <!-- 補足テキスト（費用0円の明記） -->
+                        <p class="text-xs md:text-sm text-red-700 font-bold mb-5">
+                            ※体験料・送料は、今回に限り <span class="text-base md:text-lg underline decoration-red-300 decoration-4 underline-offset-[-2px]">全て0円</span> です。
+                        </p>
+                        
+                        <!-- 特典 -->
+                        <div class="border-t border-gray-100 pt-4">
+                            <p class="text-sm text-brand-brown font-bold leading-relaxed">
                                 <i class="fa-solid fa-gift text-red-500 mr-1"></i>
                                 お届けするのは<span class="text-red-600 text-lg mx-1 bg-red-100 px-1 rounded">【新品】</span>です。<br>
-                                気に入ったら返却不要で、そのまま購入OK！
+                                <span class="text-xs md:text-sm mt-1 inline-block">気に入ったら返却不要で、そのまま購入OK！</span>
                             </p>
                         </div>
                     </div>
@@ -221,23 +227,6 @@
                             <div class="bg-white p-2 rounded-lg border border-gray-100 shadow-sm w-28 md:w-36 h-16 flex items-center justify-center">
                                 <img src="newotani.png" alt="ホテルニューオータニ" class="max-h-full max-w-full object-contain" onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-gray-600\'>ホテル<br>ニューオータニ</span>';">
                             </div>
-                        </div>
-
-                        <!-- 一般の方の声（写真） -->
-                        <div class="bg-gray-50 p-4 rounded-xl">
-                            <p class="text-sm font-bold text-gray-700 mb-3 text-center">実際のユーザー様のお部屋</p>
-                            <div class="grid grid-cols-3 gap-2 md:gap-4">
-                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="user_voice1.jpg" alt="ユーザー事例1" class="w-full h-full object-cover hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/300x300?text=User1';">
-                                </div>
-                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="user_voice2.jpg" alt="ユーザー事例2" class="w-full h-full object-cover hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/300x300?text=User2';">
-                                </div>
-                                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                                    <img src="user_voice3.jpg" alt="ユーザー事例3" class="w-full h-full object-cover hover:scale-110 transition duration-500" onerror="this.src='https://placehold.co/300x300?text=User3';">
-                                </div>
-                            </div>
-                            <p class="text-[10px] text-center text-gray-400 mt-2">※個人の感想であり効果を保証するものではありません</p>
                         </div>
                     </section>
 
@@ -321,7 +310,7 @@
                         </div>
 
                         <!-- Zoho Survey 埋め込みエリア -->
-                        <!-- iframe高さ: スマホ2000px, PC1700px -->
+                        <!-- 修正: iframe高さをレスポンシブ対応 (スマホ:2000px, PC:1700px) -->
                         <div class="w-full bg-white rounded-lg overflow-hidden relative min-h-[2000px] md:min-h-[1700px]">
                             <iframe 
                                 src="https://survey.zohopublic.com/zs/q2CWsi" 
@@ -350,12 +339,7 @@
 
                 </div> <!-- End コンテンツラッパー -->
                 
-                <!-- フッター的な閉じボタン -->
-                <div class="p-6 pb-24 bg-white text-center md:hidden">
-                    <button onclick="closeModal()" class="inline-block bg-gray-100 hover:bg-gray-200 text-gray-600 px-8 py-3 rounded-full font-bold shadow-sm border border-gray-300 transition duration-200">
-                        × 閉じる
-                    </button>
-                </div>
+                <!-- 修正: フッター的な「閉じるボタン」を削除しました -->
 
             </div>
         </div>
