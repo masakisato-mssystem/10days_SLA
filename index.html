@@ -271,10 +271,12 @@
                             <div class="w-full bg-gray-100 relative border-b border-gray-100">
                                 <img src="effect.png" alt="日本レジリエンス医学研究所による実証データ" class="w-full h-auto block" onerror="this.onerror=null; this.src='https://placehold.co/600x1200?text=Vertically+Long+Image';">
                             </div>
+                            <!-- キャプション修正 -->
                             <div class="p-4 bg-amber-50/50 border-t border-amber-100 relative z-10">
                                 <p class="text-sm md:text-base text-brand-brown font-medium text-center leading-relaxed">
-                                    統計的にも証明された「脳に優しい音」。<br>
-                                    聴き疲れせず、あなたの心を整えます。
+                                    <!-- 修正: 文言変更と強調 -->
+                                    統計的にも証明された「<span class="font-bold">心とからだに優しい音</span>」。<br>
+                                    聴き疲れせず、あなたを<span class="font-bold">深いリラックス</span>へ導きます。
                                 </p>
                             </div>
                         </div>
@@ -282,6 +284,78 @@
 
                     <!-- 5. 最終クロージング（限定性） -->
                     <div class="pt-4">
+                        
+                        <!-- 【NEW】仕様・接続特典セクション -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 px-2 md:px-6">
+                            <!-- 左：サイズ・重さ -->
+                            <div class="bg-white border border-gray-200 rounded-xl p-5 shadow-sm flex flex-col items-center text-center">
+                                <div class="text-brand-brown text-3xl mb-3">
+                                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                </div>
+                                <h4 class="font-bold text-brand-brown mb-3 text-base">
+                                    ベッドサイドに収まる<br>コンパクトサイズ
+                                </h4>
+                                <ul class="text-sm text-gray-600 space-y-2 text-left inline-block bg-gray-50 p-3 rounded-lg w-full">
+                                    <li class="flex items-start">
+                                        <span class="font-bold w-14 shrink-0 text-brand-brown">サイズ:</span>
+                                        <span>幅22cm × 高さ12.7cm<br>× 奥行9.6cm</span>
+                                    </li>
+                                    <li class="flex items-start border-t border-gray-200 pt-2">
+                                        <span class="font-bold w-14 shrink-0 text-brand-brown">重さ:</span>
+                                        <span>860g（片手で持てる軽さ）</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- 右：接続方法（特典強調） -->
+                            <!-- 修正: 標準付属品リストを追加し、特典を強調する構成に変更 -->
+                            <div class="bg-amber-50 border-2 border-brand-gold rounded-xl p-4 shadow-sm relative overflow-hidden flex flex-col items-center text-center">
+                                <!-- Specialタグ -->
+                                <div class="absolute top-0 right-0 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg shadow-sm z-10">
+                                    今回だけの特典
+                                </div>
+                                
+                                <h4 class="font-bold text-brand-brown mb-3 text-base">
+                                    届いてすぐ、<br>あなたのスマホで聴けます。
+                                </h4>
+
+                                <!-- 標準付属品リスト（控えめに） -->
+                                <div class="w-full bg-white/60 rounded-lg p-2 mb-4 text-left border border-amber-100">
+                                    <p class="text-[10px] text-gray-500 font-bold mb-1 text-center border-b border-gray-200 pb-1">標準付属品（これらも全てセット）</p>
+                                    <ul class="text-xs text-gray-600 space-y-1 pl-4 list-disc marker:text-brand-gold">
+                                        <li>ACアダプタ</li>
+                                        <li>USB電源ケーブル</li>
+                                        <li>ステレオミニケーブル</li>
+                                    </ul>
+                                </div>
+
+                                <!-- 特典エリア（強調） -->
+                                <div class="relative w-full">
+                                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-white shadow-sm z-10">
+                                        さらに！
+                                    </div>
+                                    <div class="bg-white border-2 border-red-100 rounded-lg p-3 pt-4 shadow-sm">
+                                        <div class="flex items-center justify-center gap-2 mb-1">
+                                            <i class="fa-solid fa-mobile-screen-button text-brand-gold text-lg"></i>
+                                            <i class="fa-solid fa-link text-gray-300 text-xs"></i>
+                                            <i class="fa-solid fa-music text-brand-gold text-lg"></i>
+                                        </div>
+                                        <p class="text-xs text-red-600 font-bold leading-tight mb-1">
+                                            スマホ変換ケーブル<br>
+                                            <span class="text-[10px] font-normal text-gray-500">(USB-C & Lightning)</span>
+                                        </p>
+                                        <p class="text-[10px] text-brand-brown font-bold border-b border-brand-gold inline-block">
+                                            今回は特別に同梱します
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-[10px] text-gray-400 mt-2">
+                                    対応機種: iPhone / Android / PC など
+                                </p>
+                            </div>
+                        </div>
+
                         <!-- 新品お届け＆そのまま購入訴求 -->
                         <div class="mx-auto max-w-xl mb-14 bg-red-50 border-2 border-red-400 rounded-xl p-4 text-center shadow-md relative overflow-hidden group">
                             <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]"></div>
